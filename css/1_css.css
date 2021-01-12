@@ -1,4 +1,5 @@
-﻿body{
+﻿@media screen and (min-width:601px) and (max-width:9999px) {
+body{
 	margin:0;
 	font-family:微軟正黑體
 }
@@ -9,6 +10,7 @@
 .top_bg {
 	background:url('../images/jan/bg_1.jpg') center top no-repeat;
 	height:932px;
+	background-size:cover;
 }
 main {
 	display:flex;
@@ -50,6 +52,16 @@ main {
 			display:block;
 			font-size:1.3rem;
 			padding-bottom:1.5rem;
+		}
+		.detail {
+			font-size:1.2rem;
+			color:EFEA3C;
+			font-weight:bold;
+		}
+		.detail-r {
+			font-size:1.3rem;
+			color:C60000;
+			font-weight:bold;
 		}
 		.gobuy {
 			background-color:#000;
@@ -180,3 +192,204 @@ main {
 	.tire a:hover {
 		transform: scale(1.1);
 	}
+	.search-more {
+		display:flex;
+		flex-wrap: wrap;
+		margin-top:20px;
+	}
+	.search-more div {
+		padding-right:5px; 
+		display: inline-block;
+		vertical-align: middle;
+		transform: perspective(1px) translateZ(-0.098px);
+		transition-duration: 0.3s;
+		transition-property: transform;
+	}
+	.search-more div:hover{
+		transform: scale(1.1);
+	}
+	.notice {
+		background-color:#fff;
+		text-align:center;
+		margin:20px 0 10px 0;
+	}
+		.notice div {
+			width:1200px;
+			margin:0 auto;
+			padding:10px 0;
+		}
+		.notice div span{
+			font-weight:800;
+		}
+}
+ /*-------MOBILE-------------------------------*/
+@media screen and (max-width: 600px){
+body {
+	margin:0;
+	font-family:微軟正黑體
+	}
+	.jan_edm {
+		background-color:#000;
+	}
+	.top_bg {
+		background:url('../images/jan/bg_1.jpg') center top no-repeat;
+		height:250px;
+		background-size:cover;
+	}
+	.block{
+			background-color:DB392A;
+			box-shadow: inset 0px -10px 8px #000;
+			height:200px;
+		}
+		.yellow {
+			background-color:EFB134;
+		}
+		.event {
+			display:flex;
+		}
+		.desc {
+			color:#fff;
+			font-weight:bold;
+			font-size:1rem;
+			position:relative;
+		}
+			.desc img {
+				width:150px;
+			}
+			.desc div {
+				padding:3px 0 3px 5px;
+			}
+			.detail {
+				font-size:1.1rem;
+				color:EFEA3C;
+				font-weight:bold;
+			}
+			.detail-r {
+				font-size:1.1rem;
+				color:C60000;
+				font-weight:bold;
+			}
+		.event-date {
+			display:block;
+			font-size:1.2rem;
+		}
+		.gobuy {
+			background-color:#000;
+			padding:0 !important;
+			width:100px;
+			margin:3px 0 0 10px;
+		}
+			.gobuy a {
+				text-decoration:none;
+				color:#fff;
+				font-size:1.1rem;
+			}
+
+	.img img {
+		width:150px;
+	}
+	
+main {
+	display:flex;
+	flex-wrap: wrap;
+	margin:0 auto;
+	justify-content:center;
+}
+
+	/*標題*/
+	.title {
+		margin:10px auto;
+		width:100%;
+	}
+	.title img {
+		width:100%;
+	}
+
+	.reaim a img{
+		width:100%;
+	}
+	.oil  {
+		display:inline-block;
+		text-align:center;
+		display:flex;
+		flex-wrap: wrap;
+	}
+		.red_oil {
+			width:25%;
+		}
+		.y_oil {
+			width:50%;
+			margin-bottom:10px;
+		}
+	.oil img {
+		width:100%;
+	}
+
+	#bg_red {
+		background: url('../images/jan/bg_2.jpg') center top no-repeat;
+		width:100%;
+		}
+	.shrink {
+		display:flex;
+		flex-wrap: wrap;
+		margin:0 auto;
+		justify-content:center;
+	}
+	.shrink .twoin1 {
+		text-align:center;
+	}
+	.shrink .twoin1 a{
+		display:inline-block;
+		position:relative;
+	}
+	.shrink div a span {
+		width:80px;
+		position:absolute;
+		background-color:13AE67;
+		color:#fff;
+		font-weight:400;
+		right:30px;
+		bottom:4px;
+		font-size:0.5rem;
+		padding:0 2px;
+		border-radius:30px;
+	}
+	.shrink .twoin1 img {
+		width:150px;
+	}
+	.tire {
+		display:flex;
+		flex-wrap: wrap;
+		margin:0 auto;
+		justify-content:center;
+	}
+	.tire a img {
+		width:150px;
+	}
+	.search-more {
+		display:flex;
+		flex-wrap: wrap;
+		margin:0 auto;
+		justify-content:center;
+	}
+		.search-more div {
+			width:30%;
+			padding:5px 5px 0 0;
+		}
+		.search-more div img {
+			width:100%;
+		}
+	.notice {
+		background-color:#000;
+		text-align:center;
+		margin:20px 0 10px 0;
+	}
+		.notice div {
+			margin:0 auto;
+			padding:10px 0;
+		}
+		.notice div span{
+			font-weight:600;
+			color:#fff;
+		}
+}
