@@ -1,0 +1,182 @@
+﻿body{
+	margin:0;
+	font-family:微軟正黑體
+}
+.jan_edm {
+	min-width:1200px;
+	background-color:#000;
+}
+.top_bg {
+	background:url('../images/jan/bg_1.jpg') center top no-repeat;
+	height:932px;
+}
+main {
+	display:flex;
+	flex-wrap: wrap;
+	width:1100px;
+	margin:0 auto;
+
+}
+	.event_L {
+		flex-basis:480px;		
+		margin:10px 10px 10px 50px;
+	}
+		
+	.event_R {
+		flex-basis:480px;
+		margin:10px 50px 10px 10px;
+	}
+	.block{
+			background-color:DB392A;
+			height:300px;
+			margin:20px 0;
+			box-shadow: inset 0px -10px 8px #000;
+		}
+		.yellow {
+			background-color:EFB134;
+		}
+		.event {
+			display:flex;
+		}
+		.desc {
+			color:#fff;
+			font-weight:bold;
+			font-size:1.1rem;
+		}
+		.desc div {
+			padding:10px;
+		}
+		.event-date {
+			display:block;
+			font-size:1.3rem;
+			padding-bottom:1.5rem;
+		}
+		.gobuy {
+			background-color:#000;
+			position:relative;
+			width:180px;
+			margin:10px;
+			text-align:center;
+			border-radius:30px;
+			transition: background-color 2s;
+			display: inline-block;
+			 vertical-align: middle;
+			 -webkit-transform: perspective(1px) translateZ(0);
+			 transform: perspective(1px) translateZ(0);
+			 -webkit-transition-property: color;
+			 transition-property: color;
+			 -webkit-transition-duration: 0.3s;
+			 transition-duration: 0.3s;
+		}
+			.gobuy a {
+				text-decoration:none;
+				color:#fff;
+				display:block;
+			}
+			.gobuy a:hover{
+				color:#000;
+				transition:0.6s;
+			}
+			.gobuy::after{
+				content: "";
+				  position: absolute;
+				  z-index: -1;
+				  top: 0;
+				  left: 0;
+				  right: 0;
+				  bottom: 0;
+				  background: #fff;
+				  -webkit-transform: scaleX(0);
+				  transform: scaleX(0);
+				  -webkit-transform-origin: 0 50%;
+				  transform-origin: 0 50%;
+				  -webkit-transition-property: transform;
+				  transition-property: transform;
+				  -webkit-transition-duration: 0.3s;
+				  transition-duration: 0.3s;
+				  -webkit-transition-timing-function: ease-out;
+				  transition-timing-function:ease-in-out;
+				  border-radius:30px;
+			}
+
+			.gobuy:hover::after{
+				-webkit-transform: scaleX(1);
+				transform: scaleX(1);
+			}
+	.oil{
+		margin:0 auto;
+	}
+		.oil div {
+			display:inline-block;
+			position:relative;
+			vertical-align: middle;
+			transform: perspective(1px) translateZ(0);
+			transition-duration: 0.3s;
+			transition-property: transform;
+		}
+		.oil div:hover{
+			bottom:5px;
+			transition: transform 1s;
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+#bg_red {
+	background: url('../images/jan/bg_2.jpg') center top no-repeat;
+	max-width:1920px;
+	height:1000px;
+	margin-top:20px;
+}
+	.shrink {
+		display:flex;
+		flex-wrap: wrap;
+		width:1100px;
+		margin:0 auto;
+		text-align:center;
+		justify-content: center;
+	}
+	.title {
+		margin:0 auto;
+		margin:50px 0 20px 0;
+	}
+	.product_area div a {
+		padding-right:10px;
+		position:relative;
+		display: inline-block;
+		vertical-align: middle;
+		transform: perspective(1px) translateZ(0);
+		transition-duration: 0.3s;
+		transition-property: transform;
+	}
+	.product_area div a:hover{
+		transform: scale(1.1);
+	}
+	.product_area div a span {
+		width:230px;
+		position:absolute;
+		background-color:13AE67;
+		color:#fff;
+		font-weight:600;
+		right:18px;
+		bottom:4px;
+		padding:3.5px 0px;
+	}
+	.product_area div a span:hover{
+		border-radius:30px;
+		transition: border-radius 0.5s;
+	}
+#bg_000 {
+	background-color:#000;
+}
+	.reaim {
+		margin:20px 0 30px 0;
+	}
+	.tire a {
+		display: inline-block;
+		vertical-align: middle;
+		transform: perspective(1px) translateZ(0);
+		transition-duration: 0.3s;
+		transition-property: transform;
+	}
+	.tire a:hover {
+		transform: scale(1.1);
+	}
